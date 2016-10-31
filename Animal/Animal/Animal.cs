@@ -9,8 +9,7 @@ namespace Animal
     class Animal
     {
         private string _name { get; set; }
-        private bool _haveTail { get; set; }
-        private bool _isDangerous { get; set; }
+        private bool _haveTail, _isDangerous;
 
         public Animal(string Name, bool HaveTail, bool IsDangerous)
         {
@@ -20,7 +19,7 @@ namespace Animal
         }
         public string AnimalName()
         {
-            return "This animal name is: " + _name + "\nit " + _haveTail + "\nit's " + _isDangerous;
+            return "This animal name is: " + _name + "\nit " + (_haveTail ? "does have tail" : "does not have a tail") + "\nit's " + (_isDangerous ? "dangerous!!" : "not dangerous :)");
         }
     }
 }

@@ -11,6 +11,9 @@ namespace Animal
         public Dog(string Name, bool HaveTail, bool IsDangerous) 
             : base(Name, HaveTail, IsDangerous)
         {
+            Name = "Niko";
+            HaveTail = true;
+            IsDangerous = false;
         }
     }
 }
