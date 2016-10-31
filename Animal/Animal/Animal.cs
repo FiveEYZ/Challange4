@@ -20,7 +20,7 @@ namespace Animal
         }
         public string AnimalName()
         {
-            return "This animal name is: " + _name + "\nand it " + _haveTail + "and it's " + _isDangerous;
+            return "This animal name is: " + _name + "\nit " + _haveTail + "\nit's " + _isDangerous;
         }
     }
 }
