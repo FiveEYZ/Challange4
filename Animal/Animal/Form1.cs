@@ -19,7 +19,19 @@ namespace Animal
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+        
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            List<Animal> zoo = new List<Animal>();
+            zoo.Add(new Dog("Niko", true, false));
+            zoo.Add(new Dog("Loke", true, false));
+            zoo.Add(new Bird("Harry", false, true));
+            foreach (var a in zoo)
+            {
+                listBox1.Items.Add(a);
+            }
         }
     }
 }

@@ -11,5 +11,9 @@ namespace Animal
         public Bird(string Name, bool HaveTail, bool IsDangerous) : base(Name, HaveTail, IsDangerous)
         {
         }
+        public override string ToString()
+        {
+            return "Bird" + base.ToString();
+        }
     }
 }

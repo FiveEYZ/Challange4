@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 
 namespace Animal
 {
-    class Animal
+    public class Animal
     {
-        private string _name { get; set; }
+        private string _name;
         private bool _haveTail, _isDangerous;
 
         public Animal(string Name, bool HaveTail, bool IsDangerous)
         {
-            Name = _name;
-            HaveTail = _haveTail;
-            IsDangerous = _isDangerous;
+            _name = Name;
+            _haveTail = HaveTail;
+            _isDangerous = IsDangerous;
         }
-        public string AnimalName()
+
+        public override string ToString()
         {
-            return "This animal name is: " + _name + "\nit " + (_haveTail ? "does have tail" : "does not have a tail") + "\nit's " + (_isDangerous ? "dangerous!!" : "not dangerous :)");
+            return " name is: " + _name + "\n it " + (_haveTail ? "does have tail" : "does not have a tail") + "\n it's " + (_isDangerous ? "dangerous!!" : "not dangerous :)");
+        }
+
+        public virtual void DoSound()
+        {
+            //play animal sounds
         }
     }
 }
